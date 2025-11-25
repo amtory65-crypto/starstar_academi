@@ -1,0 +1,46 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.bg-custom-dark {
+    background-color: #1a1a2e !important;
+}
+
+.text-custom-blue {
+    color: #4a90e2 !important;
+}
+
+.section-title-color {
+    color: #1a1a2e;
+}
+
+.bg-section {
+    background-color: #f7f7f7 !important;
+}
+
+#hero-section {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid #4a90e2;
+}
+
+.card-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.contact-list li {
+    font-size: 1.1em;
+}
