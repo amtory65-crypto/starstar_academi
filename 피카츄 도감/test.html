@@ -1,31 +1,238 @@
 <html>
- <head>
-    <title>
-        포켓몬 도감
-    </title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>
-        남상우의 포켓몬 도감 ㅇㅇ!
-        </h1>
-        <h2>
-            10618 남상우
-        </h2>
-        <h3>
-            남상우가 좋아하는 포켓몬스터 도감을 만들어봤어요!!
-        </h3>
-     
-        <img src="포켓몬스터 이미지.png" alt="포켓몬스터 사진">
-        <ul>
-        <li><a href="https://namu.wiki/w/%ED%94%BC%EC%B9%B4%EC%B8%84">피카츄</a></li>
-        <li><a href="https://namu.wiki/w/%EC%B9%98%EC%BD%94%EB%A6%AC%ED%83%80">치코리타</a></li>
-        </ul>
-
-    
-
+    <head>
+        <title>
+            포켓몬 도감
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
         
-  
-  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body class="bg-light">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="bi bi-book-half"></i> 포켓몬 도감
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">홈</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#quagsireModal">좋아하는 포켓몬 (누오)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">나만의 컬렉션</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="포켓몬 검색" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">검색</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container my-5 p-4 bg-white rounded shadow-lg text-center">
+            
+            <h1 class="text-danger mb-3 fw-bold display-5">
+                남상우의 포켓몬 도감 ㅇㅇ!
+            </h1>
+            <h2 class="text-secondary fs-5 mb-1">
+                10618 남상우
+            </h2>
+            <h3 class="text-muted fs-6 mb-4">
+                남상우가 좋아하는 포켓몬스터 도감을 만들어봤어요!!
+            </h3>
+         
+            <img src="포켓몬스터 이미지.png" alt="포켓몬스터 사진" class="img-fluid rounded border border-3 p-2 my-4 shadow-sm mx-auto d-block" style="max-width: 250px;">
+            
+            <ul class="list-unstyled mt-4 d-flex justify-content-center gap-3">
+                <li class="card w-25 p-3 shadow-sm">
+                    <a href="#" class="btn btn-warning fw-bold text-dark w-100 stretched-link" data-bs-toggle="modal" data-bs-target="#pikachuModal">
+                        ⚡ 피카츄
+                    </a>
+                </li>
+                <li class="card w-25 p-3 shadow-sm">
+                    <a href="#" class="btn btn-success fw-bold text-white w-100 stretched-link" data-bs-toggle="modal" data-bs-target="#chikoritaModal">
+                        🌿 치코리타
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="modal fade" id="pikachuModal" tabindex="-1" aria-labelledby="pikachuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    
+                    <div class="modal-header bg-warning text-dark">
+                        <h5 class="modal-title fw-bold" id="pikachuModalLabel">
+                            <i class="bi bi-lightning-fill"></i> #0025 피카츄 (Pikachu) 도감 정보
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="text-center mb-3">
+                            <span class="badge bg-warning text-dark fs-6 p-2">⚡ 전기</span>
+                        </div>
+
+                        <p class="lead text-center mb-4">
+                            양 볼에 전기를 모아두는 귀여운 전기쥐 포켓몬!
+                        </p>
+
+                        <div class="card p-3 mb-3 bg-light">
+                            <h6 class="card-title fw-bold text-warning">특징 및 습성</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    뺨의 작은 **전기 주머니**에 전기를 모아 위기 상황일 때 방전합니다.
+                                </li>
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    꼬리를 세워서 주변의 기척을 살피며, 무턱대고 꼬리를 잡아당기면 물어버릴 수 있습니다.
+                                </li>
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    딱딱한 열매도 전기로 구워서 부드럽게 만든 뒤에 먹는 지혜가 있습니다.
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <p class="mb-1 text-muted">분류</p>
+                                <p class="fw-bold">쥐 포켓몬</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-1 text-muted">키 / 몸무게</p>
+                                <p class="fw-bold">0.4 m / 6.0 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">창 닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="chikoritaModal" tabindex="-1" aria-labelledby="chikoritaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title fw-bold" id="chikoritaModalLabel">
+                            <i class="bi bi-flower1"></i> #0152 치코리타 (Chikorita) 도감 정보
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="text-center mb-3">
+                            <span class="badge bg-success fs-6 p-2">🌿 풀</span>
+                        </div>
+
+                        <p class="lead text-center mb-4">
+                            머리의 잎사귀에서 달콤한 향기가 나는 잎 포켓몬!
+                        </p>
+
+                        <div class="card p-3 mb-3 bg-light">
+                            <h6 class="card-title fw-bold text-success">특징 및 습성</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    머리의 잎사귀에서 나는 달콤한 향기로 주변의 **온도나 습도를 탐지**합니다.
+                                </li>
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    조용히 햇살을 쬐는 것을 매우 좋아하며, 잎사귀를 이용해 따뜻한 장소를 찾아냅니다.
+                                </li>
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    잎사귀를 휘둘러 위협하지만, 달콤한 냄새 때문에 상대가 부드러운 분위기가 됩니다.
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <p class="mb-1 text-muted">분류</p>
+                                <p class="fw-bold">잎 포켓몬</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-1 text-muted">키 / 몸무게</p>
+                                <p class="fw-bold">0.9 m / 6.4 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">창 닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="quagsireModal" tabindex="-1" aria-labelledby="quagsireModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-info text-white">
+                        <h5 class="modal-title fw-bold" id="quagsireModalLabel">
+                            <i class="bi bi-heart-fill"></i> #195 누오 (Quagsire) 도감 정보
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center mb-3">
+                            <span class="badge bg-primary fs-6 me-2 p-2">💧 물</span>
+                            <span class="badge bg-secondary fs-6 p-2">⛰️ 땅</span>
+                        </div>
+                        <p class="lead text-center mb-4">
+                            느긋하고 온순한 성격의 수어 포켓몬!
+                        </p>
+                        <div class="card p-3 mb-3 bg-light">
+                            <h6 class="card-title fw-bold text-primary">특징 및 습성</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    물속에서 입을 벌리고 먹이가 뛰어들기를 그저 기다리는 무사태평한 포켓몬입니다.
+                                </li>
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    헤엄치다가 강바닥이나 바위에 머리를 부딪쳐도 전혀 신경 쓰지 않습니다.
+                                </li>
+                                <li class="list-group-item bg-light">
+                                    <i class="bi bi-info-circle-fill"></i> 
+                                    **물/땅 타입** 덕분에 약점이 **풀 타입 하나** 뿐인 뛰어난 방어 상성을 가졌습니다.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <p class="mb-1 text-muted">분류</p>
+                                <p class="fw-bold">수어 포켓몬</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-1 text-muted">키 / 몸무게</p>
+                                <p class="fw-bold">1.4 m / 75.0 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">창 닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body> 
 </html>
