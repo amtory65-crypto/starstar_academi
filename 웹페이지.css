@@ -44,3 +44,13 @@ body {
 .contact-list li {
     font-size: 1.1em;
 }
+
+.contact-list a {
+    text-decoration: underline !important;
+    color: #1a1a2e !important;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #4a90e2 !important;
+}
